@@ -1,0 +1,1 @@
+ELF x86-64 Linux, glibc. Jalankan ./manifest SERIAL8. Bila atribut executable hilang saat ekstraksi ZIP, gunakan chmod +x manifest. Analisis statis cukup dan diperbolehkan; tidak memerlukan jaringan atau hak admin.
