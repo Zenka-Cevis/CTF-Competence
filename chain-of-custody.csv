@@ -1,0 +1,4 @@
+event_utc,object,operation,input_sha256,output_file
+2026-10-11T16:10:00Z,CAM-41/ORIGINAL,camera_ingest,811a186a0fe2ceac504186d158002777b0ae3c09d20abfc056e42a9827cc9604,capture-101.png
+2026-10-11T16:42:00Z,CAM-41/PREVIEW,resize_and_reencode,811a186a0fe2ceac504186d158002777b0ae3c09d20abfc056e42a9827cc9604,capture-102.png
+2026-10-11T17:05:00Z,ARCHIVE/SCAN,independent_scan,,capture-103.png
