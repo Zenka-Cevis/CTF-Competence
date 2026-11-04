@@ -1,0 +1,15 @@
+Recovery specification
+
+The archive uses Shamir sharing with threshold 2-of-5, independently for
+each secret byte over GF(2^8). The irreducible polynomial is 0x11B.
+Addition is XOR. Multiplication is polynomial multiplication reduced by
+0x11B. A share row stores x and the byte-valued y sequence in hexadecimal.
+The provisioning commitment is lowercase SHA-256 of ASCII decimal x, one
+colon, then the raw y bytes. Reject rows whose commitment does not match.
+
+For any two distinct valid x coordinates, interpolate the degree-1
+polynomial at x=0 to recover the secret bytes. The archive key stream is
+SHA-256(secret || counter32be), concatenated from counter 0 and truncated.
+XOR it with archive.enc to recover archive.mac and archive.ciphertext.
+Verify HMAC-SHA256 with the secret as key over the ciphertext before
+accepting the plaintext. Plaintext is UTF-8 ASCII without a trailing newline.
