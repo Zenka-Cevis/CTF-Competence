@@ -1,0 +1,7 @@
+{
+  "object": "SPK-71",
+  "codec": "zlib",
+  "fragments": 5,
+  "compressed_sha256": "1ee8c5ff4e045d1a6897b591fdf59582f006be4f1a35d9bd15d9a3897c5f6a9e",
+  "record_format": "transfer,position,hex,crc32; position mulai 0; transfer ID bukan identitas objek"
+}

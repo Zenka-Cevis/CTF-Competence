@@ -1,0 +1,1 @@
+Tiga transfer memakai kanal sama. Tiap fragmen lolos checksum transport; sebagian berasal dari objek lain. Identitas objek ditentukan digest katalog.
