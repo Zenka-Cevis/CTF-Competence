@@ -1,0 +1,7 @@
+Spesifikasi ekspor kamera TM3 (bukan petunjuk lokasi bukti):
+Kunci = SHA256(UTF8(phrase + "|" + nonce)). Interval sandi radio [mulai, akhir).
+Kandidat pixel (x+2*y)%5==0, koordinat origin kiri atas, indeks y*width+x.
+Acak list kandidat raster memakai Python 3 random.Random(int.from_bytes(SHA256(UTF8(nonce)).digest(), "big")).shuffle.
+Baca LSB kanal B sesuai list; bit MSB-first per byte.
+Frame: ASCII TM3, panjang ciphertext uint16 big-endian, ciphertext, HMAC-SHA256(key,ciphertext)[:16].
+Ciphertext = zlib(payload) XOR blok SHA256(key || counter_uint32_be), counter mulai 0.
