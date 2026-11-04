@@ -1,0 +1,1 @@
+Legacy wire format: XOR per-byte, secret 16-byte repeated mask, offset direset setiap record. Tidak ada salt per transaksi. Catatan ini menjelaskan implementasi, bukan nilai secret.

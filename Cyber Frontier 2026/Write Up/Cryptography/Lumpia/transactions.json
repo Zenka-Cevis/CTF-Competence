@@ -1,0 +1,14 @@
+[
+  {
+    "id": "L-001",
+    "ciphertext_hex": "cad02fd0dbd2517592c115d1a37498fbb6b552b8a6a2474aaff724eae14c96f2bdf103e2fef6410af7"
+  },
+  {
+    "id": "L-002",
+    "ciphertext_hex": "c5c350fbf1e1054ab4ea0feffb4fdba8e7da52e6f0a04908f8e766bbeb4498a0b7e601b5aaaa01"
+  },
+  {
+    "id": "L-003",
+    "ciphertext_hex": "cad02fd0dbd2517592c115d1a37498fbb6b552b8a6a1474aaff724eae14c96f0bdf103e2fef6410bf1"
+  }
+]

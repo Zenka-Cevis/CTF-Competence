@@ -1,0 +1,5 @@
+{
+  "message_id": "L-001",
+  "plaintext_prefix": "LUMPIA-ORDER-V3:",
+  "source": "printer spool recover; prefix exactly 16 ASCII bytes"
+}
